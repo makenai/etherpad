@@ -145,7 +145,7 @@ function getFullSuperdomainHost() {
 }
 
 function getEmailFromAddr() {
-  var fromDomain = 'etherpad.com';
+  var fromDomain = 'pad.zappos.net';
   if (pne_utils.isPNE()) {
     fromDomain = getFullProDomain();
   }

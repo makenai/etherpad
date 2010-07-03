@@ -29,7 +29,7 @@ function isProduction() {
 var SUPERDOMAINS = {
   'localbox.info': true,
   'localhost': true,
-  'etherpad.com': true
+  'pad.zappos.net': true
 };
 
 var PNE_RELEASE_VERSION = "1.1.3";
