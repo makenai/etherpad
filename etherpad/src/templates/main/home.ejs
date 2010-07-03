@@ -16,13 +16,24 @@ limitations under the License. */ %><% helpers.setHtmlTitle("EtherPad: Open-Sour
 
 <div id="home">
   <div id="title">
-    EtherPad: Open-Sourced!
+    pad.zappos.net
   </div>
 
   <div>
     <a id="home-newpad" href="/ep/pad/newpad">
       Create new pad
     </a>
+
+	<p>
+		or
+		<br /><br />
+	</p>
+	
+	<form action="/ep/pad/create" method="post"> 
+		http://<%= request.host %>/<input type="text" name="padId" />
+		<input type="submit" id="createPad" value="Create Named Pad" /> 
+	</form>
+
     <!--
     <a id="home-newsite" href="ep/pro-signup/">
       Create team site
